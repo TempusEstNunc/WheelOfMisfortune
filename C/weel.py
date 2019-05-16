@@ -22,6 +22,7 @@ except ImportError:
 import weel_support
 import os.path
 
+
 def vp_start_gui():
     '''Starting point when module is the main routine.'''
     global val, w, root
@@ -99,6 +100,18 @@ class Toplevel1:
         self.Label0.configure(highlightbackground="#d9d9d9")
         self.Label0.configure(highlightcolor="black")
         self.Label0.configure(text =" ")
+
+        self.Label01 = tk.Label(self.Frame0)
+        self.Label01.place(relx=0.3, rely=.00, height=50, width=330)
+        
+        self.Label01.configure(background="#00aaa0")
+        self.Label01.configure(foreground="#00fff0")
+        self.Label01.pack()
+
+        
+        
+        self.Label01.configure(font = ("Calibri", 30))
+        self.Label01.configure(text ="The Luckiest Circumvolutionary Disk")
 
         self.Label1 = tk.Label(self.Frame1)
         self.Label1.place(relx=0.0, rely=0.0, height=69, width=49)
