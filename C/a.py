@@ -947,7 +947,7 @@ class Game(Toplevel1):
                 wedge %= len(self.wedges)
                 wedge1 = self.wedges[wedge]
                 if (type(wedge1) == int): 
-                        self.text = "$"+ str(wedge1)
+                        self.text = "For"+ str(wedge1) + "dollars"
                 elif(wedge1 == "lose"):
                         self.text = "Lose a Turn."
                 else:
